@@ -21,9 +21,9 @@ namespace DigitalFlower
         private static void DrawFlower()
         {
             // Показать черепашку 
-            
+            Turtle.Show();
             // Задать максимальную скорость черепашки 10
-                        
+            Turtle.Speed = 10;                        
             // Задать цвет фона графического окна silver
             GraphicsWindow.BackgroundColor = "silver";
             
@@ -31,23 +31,27 @@ namespace DigitalFlower
             GraphicsWindow.PenWidth = 3;
             
             // Повторять 15 раз
-            
+            for (int i = 0; i < 15; i++)
+            {
                 // Выполнить функцию DrawOctogon()
-               
-                // Повернуть черепашку на угол равный 1/15 от 360 градусов                               
-            
+                DrawOctogon();
+                // Повернуть черепашку на угол равный 1/15 от 360 градусов
+                Turtle.Turn(360 / 15);
+            }
         }
 
         private static void DrawOctogon()
         {          
             //  Повторять 8 раз
-           
+            for (int i = 0; i < 8; i++)
+            {
                 // Установить следующий цвет пера
                 GraphicsWindow.PenColor = ColorWeel();
                 // Переместить черепашку на 50 пикселей
-               
+                Turtle.Move(50);
                 // Повернуть черепашку на угол 1/8 от 360 градусов
-                
+                Turtle.Turn(360 / 8);
+            }  
         }
 
         private static string ColorWeel()
