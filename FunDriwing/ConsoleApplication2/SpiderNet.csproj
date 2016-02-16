@@ -7,7 +7,7 @@
     <ProjectGuid>{02510262-823B-4C5F-9016-5970B822432E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication2</RootNamespace>
+    <RootNamespace>SpiderNet</RootNamespace>
     <AssemblyName>ConsoleApplication2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
